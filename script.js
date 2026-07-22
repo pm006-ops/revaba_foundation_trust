@@ -1,4 +1,4 @@
-function toggleMenu() {
+/*function toggleMenu() {
     document.getElementById("navMenu").classList.toggle("open");
 }
 
@@ -27,6 +27,47 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             localStorage.setItem("theme", "light");
             themeBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+    });
+
+});
+*/
+// ===============================
+// Mobile Navigation
+// ===============================
+
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("open");
+}
+
+// ===============================
+// Developer Dark Mode
+// Press Ctrl + Shift + D
+// ===============================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Restore previous theme
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    // Secret shortcut: Ctrl + Shift + D
+    document.addEventListener("keydown", function (e) {
+
+        if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "d") {
+
+            e.preventDefault();
+
+            document.body.classList.toggle("dark-mode");
+
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
         }
 
     });

@@ -16,10 +16,16 @@ html {
     scroll-behavior: smooth;
 }
 
+/*
 .contact-item a {
     white-space: nowrap;
     font-size: 12px;
     /* Change to your preferred size */
+
+@media (max-width: 768px) {
+    .phone-number {
+        font-size: 14px;
+    }
 }
 
 * {

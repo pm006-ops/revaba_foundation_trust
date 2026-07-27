@@ -16,6 +16,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.contact-item a {
+    font-size: 11px;
+    /* Change to your preferred size */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -104,8 +109,8 @@ header .container {
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;

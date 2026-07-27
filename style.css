@@ -17,7 +17,8 @@ html {
 }
 
 .contact-item a {
-    font-size: 9px;
+    white-space: nowrap;
+    font-size: 12px;
     /* Change to your preferred size */
 }
 

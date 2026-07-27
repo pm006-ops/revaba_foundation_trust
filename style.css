@@ -20,12 +20,19 @@ html {
 .contact-item a {
     white-space: nowrap;
     font-size: 12px;
-    /* Change to your preferred size */
+    /* Change to your preferred size 
 
 @media (max-width: 768px) {
     .phone-number {
         font-size: 5px;
     }
+}*/
+.top-bar {
+    overflow-x: auto;
+}
+
+.phone-number {
+    white-space: nowrap;
 }
 
 * {
